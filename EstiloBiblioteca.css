@@ -1,0 +1,38 @@
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #e9ecef;
+}
+
+.table-style {
+	    text-align: center ;
+		td,th {
+			border: 1px solid ;
+		}	
+}
+.color-ISBN {
+        background-color: #ade8f4
+	
+}
+.btn-Buscar{
+	    background-color: #023e8a ;
+		color: #fff;
+		border:1px solid #023e8a ;
+		padding: 8px 16px ;
+		border-radius: 4px;
+		cursor: pointer;
+}
+.btn-Buscar:hover {
+        background-color:#0077b6;
+		border-color:#0077b6;
+}
+.imput-biblioteca{
+	    border:1px solid #023e8a ;
+		padding: 8px 16px ;
+}
+.div-buscar{
+	    text-align: right;
+}
