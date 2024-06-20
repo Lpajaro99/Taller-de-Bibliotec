@@ -1,113 +1,125 @@
-
-
 <html>
- <head>
- <title>Taller de Biblioteca</title>
-		<link rel="stylesheet" href="EstiloBiblioteca.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		
- </head>
- 
-  <body>
-    <h1> <p align="center"> TALLER DE BIBLIOTECA </p> </H1>
-	
-	<div class="div-buscar">
-    <input class="imput-biblioteca" type="text" id="bookInput" placeholder="Ingrese el nombre del libro">
-    <button class="btn-Buscar" onclick="searchBook()">Buscar <i class="fa fa-search"></i></button>
-    <p id="result"></p>
 
-    
+<head>
+	<title>Taller de Biblioteca</title>
+	<link rel="stylesheet" href="EstiloBiblioteca.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+	<h1>
+		<p align="center"> TALLER DE BIBLIOTECA </p>
+	</H1>
+
+	<div class="div-buscar">
+		<input class="imput-biblioteca" type="text" id="bookInput" placeholder="Ingrese el nombre del libro">
+		<button class="btn-Buscar" onclick="searchBook()">Buscar <i class="fa fa-search"></i></button>
+		<p id="result"></p>
+
+
 	</div>
-	
+
 	<div>
-	<h2>Lista de Libros</h2>
-	<table class="table-style" >
-			  <thead >
-                   <tr>
-				   
-				      <th>ISBN</th>
-					  <th>Titulo</th>
-					  <th>Autor</th>
-					  <th>Fecha edición</th>
-					  <th>Numero de página</th>
-					  <th>Cantidad de ejemplares</th>
-					  <th>Cantidad de ejemplares disponibles</th>
-					  <th>Resumen</th>
-					  <th>Tipos de ejemplare</th>
-					  <th>Tema</th>
-					  <th>Ubicacion física</th>
-					  
-					  
-					</thead>
-                 <tbody>					
-				   
-                   </tr>	
-                       <tr>
-					      <td class="color-ISBN" >‎6073110960</td>
-					      <td>Cincuenta sombras de Grey</td>
-						  <td>E. L. James</td>	
-                          <td>20 de junio de 2011</td>
-					      <td>544</td>
-						  <td>100</td>	
-                          <td>30</td>
-					      <td>Cincuenta sombras de Grey es una novela de la autora británica E. L. James del año 2011. Narrada en gran medida en Seattle, es la primera entrega de una hexalogía que describe la relación entre una recién graduada de la universidad, Anastasia Steele, y el joven magnate de negocios Christian Grey.</td>
-						  <td>Ambos</td>	
-                          <td> Novela, Novela rosa, Ficción, Novela romántica erótica</td>
-					      <td>Pasillo 3 estan 4-C</td>			   
-					   </tr>
-					   
-					     <tr>
-					      <td class="color-ISBN">‎843760494X</td>
-					      <td>100 años de soledad</td>
-						  <td>Gabriel García Márquez </td>	
-                          <td>12 de enero de 2007</td>
-					      <td>560</td>
-						  <td>200</td>	
-                          <td>80</td>
-					      <td>Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez, ganador del Premio Nobel de Literatura en 1982. Es considerada una obra maestra de la literatura hispanoamericana y universal, así como una de las obras más traducidas y leídas en español.​</td>
-						  <td>Fisico</td>	
-                          <td> Novela, Realismo mágico, Alta fantasía, Saga familiar, Ficción épica</td>
-					      <td>Pasillo 10 estan 9-A</td> 						  
-					   </tr>
-					   <tr>
-					      <td class="color-ISBN">9788433920713</td>
-					      <td>El coronel no tiene quien le escriba</td>
-						  <td>Gabriel García Márquez</td>	
-                          <td>01 de octubre 2004</td>
-					      <td>110</td>
-						  <td>50</td>	
-                          <td>10</td>
-					      <td>El coronel no tiene quien le escriba es una novela corta publicada por el escritor colombiano Gabriel García Márquez en 1961. Un fragmento de la novela fue publicado por primera vez en la Revista Mito en 1958​.</td>
-						  <td>electrónico</td>	
-                          <td>Novela corta, Ficción literaria</td>
-					      <td>Pasillo 8 estan 1-F</td> 						  
-					   </tr>
-                      
-					</tbody>
-                 <tfoot>
-				 
-				 <tr>
-				   
-				   <td colspan="11"> Fin de la tabla </td>
-				   
-				 </tr>
-				 
-                 </tfoot>		
-				 
-					   
-					   
-				   
-			</table>
-	
+		<h2>Lista de Libros</h2>
+		<table class="table-style">
+			<thead>
+				<tr>
+
+					<th>ISBN</th>
+					<th>Titulo</th>
+					<th>Autor</th>
+					<th>Fecha edición</th>
+					<th>Numero de página</th>
+					<th>Cantidad de ejemplares</th>
+					<th>Cantidad de ejemplares disponibles</th>
+					<th>Resumen</th>
+					<th>Tipos de ejemplare</th>
+					<th>Tema</th>
+					<th>Ubicacion física</th>
+
+
+			</thead>
+			<tbody>
+
+				</tr>
+				<tr>
+					<td class="color-ISBN">‎6073110960</td>
+					<td>Cincuenta sombras de Grey</td>
+					<td>E. L. James</td>
+					<td>20 de junio de 2011</td>
+					<td>544</td>
+					<td>100</td>
+					<td>30</td>
+					<td>Cincuenta sombras de Grey es una novela de la autora británica E. L. James del año 2011. Narrada
+						en gran medida en Seattle, es la primera entrega de una hexalogía que describe la relación entre
+						una recién graduada de la universidad, Anastasia Steele, y el joven magnate de negocios
+						Christian Grey.</td>
+					<td>Ambos</td>
+					<td> Novela, Novela rosa, Ficción, Novela romántica erótica</td>
+					<td>Pasillo 3 estan 4-C</td>
+				</tr>
+
+				<tr>
+					<td class="color-ISBN">‎843760494X</td>
+					<td>100 años de soledad</td>
+					<td>Gabriel García Márquez </td>
+					<td>12 de enero de 2007</td>
+					<td>560</td>
+					<td>200</td>
+					<td>80</td>
+					<td>Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez, ganador del
+						Premio Nobel de Literatura en 1982. Es considerada una obra maestra de la literatura
+						hispanoamericana y universal, así como una de las obras más traducidas y leídas en español.​
+					</td>
+					<td>Fisico</td>
+					<td> Novela, Realismo mágico, Alta fantasía, Saga familiar, Ficción épica</td>
+					<td>Pasillo 10 estan 9-A</td>
+				</tr>
+				<tr>
+					<td class="color-ISBN">9788433920713</td>
+					<td>El coronel no tiene quien le escriba</td>
+					<td>Gabriel García Márquez</td>
+					<td>01 de octubre 2004</td>
+					<td>110</td>
+					<td>50</td>
+					<td>10</td>
+					<td>El coronel no tiene quien le escriba es una novela corta publicada por el escritor colombiano
+						Gabriel García Márquez en 1961. Un fragmento de la novela fue publicado por primera vez en la
+						Revista Mito en 1958​.</td>
+					<td>electrónico</td>
+					<td>Novela corta, Ficción literaria</td>
+					<td>Pasillo 8 estan 1-F</td>
+				</tr>
+
+			</tbody>
+			<tfoot>
+
+				<tr>
+
+					<td colspan="11"> Fin de la tabla </td>
+
+				</tr>
+
+			</tfoot>
+
+
+
+
+		</table>
+
 	</div>
-	
-  
-  
-  
-  
-  
-  </body>
+
+
+
+
+
+
+</body>
+
 </html>
